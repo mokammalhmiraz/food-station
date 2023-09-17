@@ -1,0 +1,1021 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Calistoga&family=Montserrat:wght@400;700&family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.clr {
+    clear: both;
+}
+
+
+
+
+
+/* section head style */
+
+
+.section_head h5 {
+    color: #878787;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section_head h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.section_head p {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.custom_button {
+    background: #F64B3C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    width: 330px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+
+
+
+/* End of common CSS */
+
+/*=========================
+
+    02.HEADER AREA CSS
+
+=========================*/
+.menubar_area {
+    background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.705), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar-brand img {
+    margin: 15px 0;
+    margin-left: 25px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-right: 50px;
+    font-size: 22px;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #F64B3C;
+    transition: all .5s linear;
+}
+.navbar-nav a::before {
+	position: absolute;
+	content: '';
+	bottom: -5px;
+	width: 0;
+	height: 3px;
+	left: 50%;
+	background: #fce38a;
+	transform: translateX(-50%);
+}
+.navbar-nav a:hover::before{
+    width: 100%;
+    transition: all .5s linear;
+}
+
+.dropdown-menu-right {
+    right: 60px !important;
+    left: auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.dropdown-item {
+    padding-right: 0;
+    padding-left: 0;
+    color: #000 !important;
+    font-size: 15px !important;
+    text-align: center;
+}
+
+/*=========================
+
+    03.BANNER AREA CSS
+
+=========================*/
+
+.banner_bg{
+        background-image: url(../images/banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+
+.custom_container {
+    padding: 230px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner_content h2 {
+    font-size: 100px;
+    padding-left: 45px;
+}
+.banner_content p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    padding-left: 45px;
+    padding-top: 25px;
+}
+.banner_content .custom_button {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.banner_content .custom_button:hover {
+    background: #FFFFFF;
+    color: #F64B3C;
+    transition: all .5s linear;
+}
+
+/*=========================
+
+    04.CHEF AREA CSS
+
+=========================*/
+
+.chef_area{
+    background: #F6EEDF;
+    padding: 100px 0;
+    position: relative;
+}
+
+.chef_area .section_head h2 {
+    color: #F64B3C;
+    font-size: 70px;
+}
+.chef_area .section_head p {
+    color: #F64B3C;
+    font-size: 25px;
+}
+
+.chef_info {
+    padding-top: 50px;
+}
+
+.chef_info .chef_bio{
+    color: #F64B3C;
+}
+
+.chef_bio h4 {
+    font-weight: 700;
+    font-family: 'Archivo', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 15px;
+}
+.chef_bio p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.chef_area .vendor_1 {
+    position: absolute;
+    top: 100px;
+    right: 210px;
+}
+
+.chef_area .vendor_2 {
+    position: absolute;
+    bottom: 15px;
+    right: 30%;
+}
+
+.chef_area .vendor_3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+}
+
+.chef_area .vendor_4 {
+    position: absolute;
+    top: 290px;
+    left: 0;
+}
+
+.chef_area .vendor_5 {
+    position: absolute;
+    top: 80px;
+    left: 20%;
+}
+
+.chef_area .vendor_6 {
+    position: absolute;
+    top: 550px;
+    right: 100px;
+}
+
+/*=========================
+
+    05.BEST BURGER AREA CSS
+
+=========================*/
+
+.best_burger_area{
+    background: #F64B3C;
+    padding: 150px 0;
+}
+.best_item_photo {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 500px;
+	margin-top: 15px;
+}
+.best_item_txt {
+	padding: 100px 0;
+	padding-left: 30px;
+}
+.best_item_txt p{
+    padding: 0;
+}
+
+.best_item_txt.section_head h2 {
+    color: #FFFFFF;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.best_item_txt.section_head p {
+    color: #FFFFFF;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.best_item_txt .custom_button {
+    background: #FFFFFF;
+    color: #F64B3C;
+    text-transform: uppercase;
+    text-align: center;
+    width: 330px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+.best_item_txt .custom_button:hover {
+    background: #F64B3C;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    transition: all .5s linear;
+}
+
+/*=========================
+
+    06.BIG BURGER AREA CSS
+
+=========================*/
+
+.big_burger_area{
+    background: #F6EEDF;
+    padding: 150px 0;
+    position: relative;
+}
+
+.big_item_photo {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 500px;
+	margin-top: 15px;
+}
+
+.big_item_txt {
+	padding: 100px 0;
+	padding-right: 30px;
+    color: #F64B3C;
+}
+.big_item_txt p{
+    padding: 0;
+}
+
+.big_item_txt.section_head h2 {
+    color: #F64B3C;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.big_item_txt.section_head p {
+    color: #F64B3C;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.big_item_txt .custom_button {
+    background: #F64B3C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    width: 330px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+.big_item_txt .custom_button:hover {
+    background: #FFFFFF;
+    color: #F64B3C;
+    border: 1px solid #F64B3C;
+    transition: all .5s linear;
+}
+
+.big_burger_area .vendor_1 {
+	position: absolute;
+	top: 15px;
+	right: 860px;
+	rotate: -60deg;
+}
+
+.big_burger_area .vendor_2 {
+	position: absolute;
+	bottom: 15px;
+	right: 45%;
+}
+
+.big_burger_area .vendor_3 {
+	position: absolute;
+	top: 140px;
+	right: 20%;
+}
+
+.big_burger_area .vendor_4 {
+	position: absolute;
+	bottom: 0;
+	right: 240px;
+}
+.big_burger_area .vendor_5 {
+	position: absolute;
+	bottom: 80px;
+	left: 20%;
+	rotate: 90deg;
+}
+
+.big_burger_area .vendor_6 {
+	position: absolute;
+	top: 120px;
+	left: 255px;
+}
+
+/*=========================
+
+    07.STATICS AREA CSS
+
+=========================*/
+
+.statics_area{
+    background: #F64B3C;
+    padding: 150px 0;
+}
+
+.statics_txt{
+    padding-bottom: 10px;
+}
+
+.statics_txt.section_head h2 {
+    color: #FFFFFF;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.statics_txt.section_head p {
+	color: #FFFFFF;
+	font-size: 25px;
+	padding: 0px 155px;
+	padding-bottom: 25px;
+}
+.statics_area .counter_txt {
+	border-radius: 50%;
+	border: 5px solid #FFFFFF;
+	padding: 85px 0;
+}
+.counter_txt h2 {
+	font-size: 90px;
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+    color: #FFFFFF;
+    position: relative;
+}
+.counter_txt h2::before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 1px;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #FFFFFF;
+}
+
+.counter_txt p {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+    color: #FFFFFF;
+}
+
+/*=========================
+
+    08.PACKAGE AREA CSS
+
+=========================*/
+
+.package_area{
+    background: #F6EEDF;
+    padding: 150px 0;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.package_area .section_head h2 {
+	color: #F64B3C;
+	font-size: 50px;
+}
+
+.package_content {
+	background: #FFFFFF;
+	padding: 25px 0;
+	border-radius: 15px;
+	margin-top: 80px;
+}
+
+.package_content:hover {
+	box-shadow: 5px 5px 10px #F64B3C;
+    transition: all .5s linear;
+}
+.package_content h2 {
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+	color: #F64B3C;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+
+.package_content h3 {
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+	color: #F64B3C;
+	font-size: 30px;
+}
+
+
+.package_content p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #F64B3C;
+}
+.package_content .package_img {
+	padding: 30px 0;
+}
+.package_content .package_img img {
+	width: 110px;
+
+}
+
+.package_content .custom_button {
+	background: #F64B3C;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	width: 280px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	padding: 10px 0;
+	border-radius: 30px;
+}
+
+.package_content .custom_button:hover {
+    background: #FFFFFF;
+    color: #F64B3C;
+    border: 1px solid #F64B3C;
+    transition: all .5s linear;
+}
+
+.package_area .vendor_1 {
+	position: absolute;
+	top: 15px;
+	right: 29%;
+	rotate: -5deg;
+}
+
+.package_area .vendor_2 {
+	position: absolute;
+	bottom: 15px;
+	left: 10%;
+}
+
+.package_area .vendor_3 {
+	position: absolute;
+	top: 90px;
+	left: 20%;
+}
+
+.package_area .vendor_4 {
+	position: absolute;
+	bottom: 0;
+	right: 240px;
+}
+
+.package_area .vendor_5 {
+	position: absolute;
+	top: 210px;
+	right: 15%;
+	rotate: 10deg;
+}
+
+.package_area .vendor_6 {
+	position: absolute;
+	top: 240px;
+	left: 255px;
+}
+
+/*=========================
+
+    09.MIDDLE BG AREA CSS
+
+=========================*/
+
+.bg{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.overlay {
+	background-color: rgb(246, 75, 60);
+	opacity: 0.68;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bg_txt {
+	color: #FFFFFF;
+	padding: 270px 0;
+}
+
+.bg_txt p {
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+	font-size: 46px;
+}
+
+.bg_txt h2 {
+	padding-top: 50px;
+	font-family: 'Calistoga', cursive;
+	font-size: 60px;
+}
+
+/*=========================
+
+    10.UPDATE BG AREA CSS
+
+=========================*/
+
+.update_area{
+    background: #F6EEDF;
+    padding: 150px 0;
+    position: relative;
+}
+.update_txt h2 {
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+	color: #F64B3C;
+	font-size: 75px;
+	padding-bottom: 25px;
+}
+
+.update_txt p {
+	font-family: 'Nunito', sans-serif;
+	color: #F64B3C;
+	font-size: 25px;
+	padding: 0 210px;
+	padding-bottom: 40px;
+}
+.update_input{
+    position: relative;
+}
+.update_input input {
+	color: #C1AE9F;
+	border: 0px;
+	width: 650px;
+	height: 50px;
+	border-radius: 25px;
+	padding-left: 35px;
+	font-size: 20px;
+}
+
+.input_link .custom_buttons {
+    position: absolute;
+    top: -1px;
+    right: 228px;
+    background: #F64B3C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    width: 225px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 6px 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.update_area .vendor_1 {
+	position: absolute;
+	top: 15px;
+	right: 15%;
+	rotate: -5deg;
+}
+
+.update_area .vendor_2 {
+	position: absolute;
+	top: 285px;
+	left: 15%;
+}
+
+.update_area .vendor_3 {
+	position: absolute;
+	top: 90px;
+	left: 20%;
+}
+
+.update_area .vendor_4 {
+	position: absolute;
+	bottom: 0;
+	left: 340px;
+}
+
+.update_area .vendor_5 {
+	position: absolute;
+	top: 285px;
+	right: 10%;
+	rotate: 10deg;
+}
+
+.update_area .vendor_6 {
+	position: absolute;
+	bottom: 26px;
+	right: 404px;
+}
+
+/*=========================
+
+    11.FOOTER AREA CSS
+
+=========================*/
+
+.footer_area{
+    background: #222222;
+    padding: 150px 0;
+}
+
+.left_content h4 {
+	color: #FFFFFF;
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 25px;
+}
+
+.left_content p {
+	color: #FFFFFF;
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	padding-bottom: 25px;
+	padding-right: 90px;
+}
+
+.social_link .fa-instagram {
+	color: #222222;
+	background: #FFFFFF;
+	border-radius: 50%;
+	font-size: 30px;
+	padding: 5px 8px 5px 8px;
+    margin-right: 10px;
+}
+
+.social_link .fa-facebook {
+	color: #222222;
+	background: #FFFFFF;
+	border-radius: 50%;
+	font-size: 30px;
+	padding: 5px 10px 3px 10px;
+    margin-right: 10px;
+}
+
+.social_link .fa-twitter {
+	color: #222222;
+	background: #FFFFFF;
+	border-radius: 50%;
+	font-size: 30px;
+	padding: 5px 8px 5px 8px;
+    margin-right: 10px;
+}
+
+.social_link .fa-whatsapp {
+	color: #222222;
+	background: #FFFFFF;
+	border-radius: 50%;
+	font-size: 30px;
+	padding: 5px 8px 5px 8px;
+    margin-right: 10px;
+}
+
+.social_link i:hover{
+    background: #F64B3C;
+    transition: .2s all linear;
+}
+
+.list h4 {
+	color: #FFFFFF;
+	font-family: 'Archivo', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 25px;
+}
+
+.list ul li a {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.list ul li a::before {
+	position: absolute;
+	content: '';
+	width: 0%;
+	height: 1px;
+	bottom: 13px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #F64B3C;
+}
+
+.list ul li a:hover::before {
+    width: 100%;
+    transition: all .5s linear;
+}
+
+/*
+=========================
+=========================
+ITEMS LIST PAGE
+=========================
+=========================
+*/
+.best_deal .section_head::before {
+    position: absolute;
+    content: '';
+    bottom: 40px;
+    width: 30%;
+    height: 3px;
+    left: 50%;
+    background: #F64B3C;
+    transform: translateX(-50%);
+}
+
+.before.section_head::before {
+    position: absolute;
+    content: '';
+    bottom: 40px;
+    width: 15%;
+    height: 3px;
+    left: 50%;
+    background: #fce38a;
+    transform: translateX(-50%);
+}
+.bgt.section_head::before {
+    position: absolute;
+    content: '';
+    bottom: 40px;
+    width: 15%;
+    height: 3px;
+    left: 50%;
+    background: #F64B3C;
+    transform: translateX(-50%);
+}
+
+.bgt.section_head h2{
+    color: #F64B3C !important;
+}
+.best_deal .custom_button {
+    background: #F64B3C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 0px;
+}
+
+.best_deal .custom_button:hover {
+    background: #FFFFFF;
+    color: #F64B3C;
+    border: 1px solid #F64B3C;
+    transition: all .5s linear;
+}
+
+.package {
+    background: #F64B3C;
+    padding: 150px 0;
+}
+
+.package .section_head::before {
+    position: absolute;
+    content: '';
+    bottom: 40px;
+    width: 20%;
+    height: 3px;
+    left: 50%;
+    background: #fce38a;
+    transform: translateX(-50%);
+}
+
+.single-package-item{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+    background: #fff2e6;
+    -webkit-transition: .5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition: .5s;
+}
+.single-package-item-txt{
+    padding: 0 25px;
+}
+.single-package-item img {
+    width: 100%;
+}
+.single-package-item h3{
+    position: relative;
+    font-size: 20px;
+    color: #565a5c;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+}
+.single-package-item h3:after{
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ebebeb;
+}
+.packages-para{
+    padding:17px 0 0;
+    text-transform: capitalize;
+}
+.packages-para p{
+    font-size: 14px;
+    color: #565a5c;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:15px;
+}
+.packages-para p span{
+    display: inline-block;
+    width: 150px;
+}
+.packages-review p i{
+    color: #ffdf00;
+    font-size: 16px;
+}
+.packages-review span{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #565a5c;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.about-view.packages-btn{
+    width: 110px;
+    height: 35px;
+    font-size: 14px;
+    color: #565a5c;
+    text-transform: capitalize;
+    -webkit-transition: .5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition: .5s;
+
+}
+.about-view.packages-btn:hover{
+    box-shadow: 0 5px 20px rgba(14,15,18,.3);
+}
+.single-package-item:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+
+.product.custom_button {
+    background: #F64B3C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 0px;
+}
+
+.product.custom_button {
+    background: #F64B3C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 0px;
+}
